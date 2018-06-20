@@ -1,0 +1,9 @@
+[Unit]
+Description=PayClient
+After=network.target
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/startx /usr/bin/PayClient -- /usr/bin/Xorg :0 -nocursor -s 0 -dpms
+#Restart=always

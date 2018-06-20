@@ -1,0 +1,3 @@
+KERNEL=="ttyUSB*", MODE:="0777"
+KERNEL=="ttyUSB*", KERNELS=="1-1.2", MODE:="0777", SYMLINK+="weigher"
+KERNEL=="ttyUSB*", KERNELS=="1-1.3", MODE:="0777", SYMLINK+="door_controller"

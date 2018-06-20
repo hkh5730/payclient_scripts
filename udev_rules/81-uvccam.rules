@@ -1,0 +1,4 @@
+# USB UVC Camera
+KERNEL=="video*", SUBSYSTEMS=="usb", ATTR{name}=="HD USB Camera: USB Camera", SYMLINK+="cam_item"
+KERNEL=="video*", SUBSYSTEMS=="usb", ATTRS{interface}=="Intel(R) RealSense(TM) Camera SR300 RGB", SYMLINK+="cam_user"
+KERNEL=="video*", SUBSYSTEMS=="usb", ATTRS{product}=="KS-WDR", SYMLINK+="cam_item2"
